@@ -1,9 +1,3 @@
-// API key for openweather
-// 4c6d93da4571c8f32ca31837327933a2
-//e805b82dba788816cd55c6b207b7ea5e
-// var apikey = "4c6d93da4571c8f32ca31837327933a2";
-
-
 //date and time element
 var currtime = document.getElementById("time");
 var currdate = document.getElementById("date");
