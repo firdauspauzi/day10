@@ -61,7 +61,7 @@ var options = {
     var lat = pos.coords.latitude;
     var long = pos.coords.longitude;
 
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=4c6d93da4571c8f32ca31837327933a2`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=4c6d93da4571c8f32ca31837327933a2`)
     .then(response=>response.json())
     .then((data) => {
         console.log("Hello");
@@ -77,7 +77,7 @@ var options = {
         var wind = data.list[0].wind.speed;
 
         mainLocation.innerHTML = name;
-        mainIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+        mainIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         mainTemp.innerHTML = temperature.toFixed(0) + " &#8451;"; //&#8451; is the degree celsius symbol
         mainWeather.innerHTML = weather;
         mainDesc.innerHTML = weatherdesc;
@@ -145,7 +145,7 @@ function updateWeatherMain(latState, longState) {
   var lat = latState;
   var long = longState;
 
-  fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=4c6d93da4571c8f32ca31837327933a2`)
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=4c6d93da4571c8f32ca31837327933a2`)
   .then(response=>response.json())
   .then((data) => {
 
