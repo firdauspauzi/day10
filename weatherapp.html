@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="weatherapp.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "container">
+            
+            <div class="currInfo">
+                <div>
+                    <p id = "mainlocation">Kuala Lumpur<p>
+                </div>
+                <div class="currtimedate">
+                    <p id = "time"></p>
+                    <p id = "date"></p>
+                </div>
+            </div>
+
+
+            <div class="statesMenu">
+                <div class="selectstates" onclick="updateWeatherMain(2.0,103.5)">
+                    <p>Johor</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(2.1,102.25)">
+                    <p>Melaka</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(2.75,102.166672)">
+                    <p>Negeri Sembilan</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(3.14309,101.686531)">
+                    <p>Kuala Lumpur</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(3.5,102.75)">
+                    <p>Pahang</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(5.0,101.0)">
+                    <p>Perak</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(6.0,100.666672)">
+                    <p>Kedah</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(5.37677,100.258476)">
+                    <p>Pulau Pinang</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(6.5,100.25)">
+                    <p>Perlis</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(5.33333,102.0)">
+                    <p>Kelantan</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(5.0,103.0)">
+                    <p>Terengganu</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(2.5,113.5)">
+                    <p>Sarawak</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+                <div class="selectstates" onclick="updateWeatherMain(5.5,117.0)">
+                    <p>Sabah</p>
+                    <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather">Rain</p>
+                    <p id = "tempstate"></p> -->
+                </div>
+            </div>
+            
+            <div class="mainInfo">
+                    <img id = "mainIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "mainTemp">29 Celsius</p>
+            </div>
+
+            <div class="mainExtra">
+                <p id = "mainWeather">Raining</p>
+                <p id = "mainDesc">Heavy Rain</p><br>
+                <p id = "mainHumid">Humidity</p>
+                <p id = "mainWind">Wind</p>
+            </div>
+
+
+            <div class="fiveDayForecast">
+                <div class="forecast">
+                    <p id = "currDay">Day</p>
+                    <img id = "currIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "currWeather">weather</p>
+                </div>
+                <div class="forecast">
+                    <p id = "day2">Day</p>
+                    <img id = "icon2" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather2">weather</p>
+                </div>
+                <div class="forecast">
+                    <p id = "day3">Day</p>
+                    <img id = "icon3" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather3">weather</p>
+                </div>
+                <div class="forecast">
+                    <p id = "day4">Day</p>
+                    <img id = "icon4" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather4">weather</p>
+                </div>
+                <div class="forecast">
+                    <p id = "day5">Day</p>
+                    <img id = "icon5" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                    <p id = "weather5">weather</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="weatherapp.js"></script>
+    </body>
+</html>
